@@ -1,5 +1,6 @@
 %global         forgeurl https://gitlab.gnome.org/World/design/icon-library
 %global         uuid org.gnome.design.IconLibrary
+%global         tag 0.0.12
 
 Name:      icon-library
 Version:   0.0.12
