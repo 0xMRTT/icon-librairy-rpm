@@ -11,7 +11,7 @@ Summary:   GNOME symbolic icons for your apps.
 
 License:   GPL-3.0-or-later
 URL:       https://gitlab.gnome.org/World/design/icon-library
-Source0:   %{forgesource}
+Source0:   https://gitlab.gnome.org/World/design/icon-library/-/archive/%{version}/icon-library-%{version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  pkgconfig(gtksourceview-5)
@@ -26,7 +26,7 @@ BuildRequires:  libappstream-glib
 A tool for browsing symbolic GNOME icons, you can download icons and use them in your apps.
 
 %prep
-%forgeautosetup
+%autosetup -n icon-library-%{version}
 
 
 %build
