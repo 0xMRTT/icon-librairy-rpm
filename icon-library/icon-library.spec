@@ -41,7 +41,7 @@ A tool for browsing symbolic GNOME icons, you can download icons and use them in
 
 
 %check
-appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.appdata.xml
+appstream-util validate-relax --nonet %{buildroot}%{_metainfodir}/%{uuid}.metainfo.xml
 desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 
 
@@ -50,7 +50,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %doc README.md
 %{_bindir}/icon-library
 %{_datadir}/icon-library/*
-%{_metainfodir}/%{uuid}.appdata.xml
+%{_metainfodir}/%{uuid}.metainfo.xml
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
