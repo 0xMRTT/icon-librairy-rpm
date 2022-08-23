@@ -7,6 +7,8 @@ Version:   0.0.12
 Release:   %autorelease
 Summary:   GNOME symbolic icons for your apps.
 
+ExclusiveArch: %{rust_arches}
+
 %forgemeta
 
 License:   GPL-3.0-or-later
