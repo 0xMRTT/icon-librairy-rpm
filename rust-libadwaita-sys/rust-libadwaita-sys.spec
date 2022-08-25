@@ -16,7 +16,7 @@ Source:         %{crates_source}
 ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  rust-packaging >= 21
-
+BuildRequires:  pkgconfig(libadwaita-1) >= 1
 %global _description %{expand:
 FFI bindings for libadwaita.}
 
