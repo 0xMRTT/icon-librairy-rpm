@@ -52,6 +52,8 @@ use the "default" feature of the "%{crate}" crate.
 %autosetup -n %{crate}-%{version_no_tilde} -p1
 %cargo_prep
 
+echo '/usr/bin/rustdoc
+
 %generate_buildrequires
 %cargo_generate_buildrequires
 
@@ -59,6 +61,7 @@ use the "default" feature of the "%{crate}" crate.
 %cargo_build
 
 %install
+
 %cargo_install
 
 # %if %{with check}
