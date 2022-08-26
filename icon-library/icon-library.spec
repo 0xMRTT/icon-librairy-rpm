@@ -77,7 +77,9 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/applications/%{uuid}.desktop
 %{_datadir}/glib-2.0/schemas/%{uuid}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
-
+%{_datadir}/locale/*/LC_MESSAGES/icon-library.mo
+%{_datadir}/dbus-1/services/%{uuid}.SearchProvider.service
+%{_datadir}/gnome-shell/search-providers/%{uuid}.search-provider.ini
 %changelog
 %autochangelog
 
