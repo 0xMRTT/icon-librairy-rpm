@@ -13,6 +13,9 @@ License:        GPL-3.0-or-later
 URL:            https://crates.io/crates/gtk-macros
 Source:         %{crates_source}
 
+# fix doctest always failing
+Patch0:        0001-fix-doctest-fail.patch
+
 ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  rust-packaging >= 21
