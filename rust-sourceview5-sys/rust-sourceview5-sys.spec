@@ -16,6 +16,7 @@ Source:         %{crates_source}
 ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  rust-packaging >= 21
+BuildRequires:  pkgconfig(gtksourceview-5)
 
 %global _description %{expand:
 FFI bindings for GtkSourceView 5.}
