@@ -59,7 +59,6 @@ echo '/usr/bin/desktop-file-validate'
 %install
 %meson_install
 %cargo_install
-mv %{buildroot}%{_bindir}/{icon-library,%{uuid}}
 	
 # clean up buildroot pollution caused by build system errors
 rm -rf %{buildroot}/builddir
